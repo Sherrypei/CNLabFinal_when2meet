@@ -22,7 +22,8 @@ router.get("/:id", function (req, res) {
 
 router.post("/add", function (req, res) {
   //Add a new user
-  console.log(req.body)
+  console.log(req.body);
+  
   const event_name = req.body.event_name;
   const start_date = req.body.start_date;
   const end_date = req.body.end_date;
@@ -34,7 +35,6 @@ router.post("/add", function (req, res) {
     start_time,
     end_time
   );
-
   const newUser = new user({
     event_name,
     start_date,
@@ -45,9 +45,13 @@ router.post("/add", function (req, res) {
     availability,
   });
   //Create users_time_object
+  console.log(newUser.id);
   newUser
     .save()
-    .then(() => res.json(newUser.id))
+    .then(() => {
+      console.log("success")
+      res.json(newUser.id)
+    })
     .catch((err) => res.status(400).json("Error: " + err));
 });
 

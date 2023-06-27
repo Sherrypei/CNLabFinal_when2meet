@@ -1,4 +1,4 @@
-# when2meet clone
+ when2meet clone
 This project is a clone of the website [when2meet](when2meet.com). We decided to do a clone of it as it is a very useful product that helps people find a common time to meet. However, it is also very aesthetically unappealing and therefore, we wanted to improve the UI.
 
 ## Installation
@@ -52,4 +52,5 @@ We improve the UI by adding simple styling and paginations
 
 ### Mobile friendly
 We noticed that the original site was not mobile friendly as users would have to scroll horizontally to see the full page. We wanted to make this site responsive and mobile friendly.
-
+### Account Login
+We added the login function and set the default username and password to "test".
