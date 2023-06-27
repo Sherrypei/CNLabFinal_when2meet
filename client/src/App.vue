@@ -21,12 +21,14 @@
   padding: 0;
   font-size: 16px;
 }
+
 html,
 body {
   height: 100%;
   font-family: "Poppins", sans-serif;
   background-color: #f6f7f9;
 }
+
 .container {
   width: 80%;
   margin: 0 auto;
@@ -46,11 +48,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+
   a {
     color: #494949;
     text-decoration: none;
     margin-left: 20px;
     font-size: 16px;
+
     &:hover {
       text-decoration: underline;
     }
@@ -72,6 +76,7 @@ body {
       background-color: #f6c467;
       text-decoration: none;
       transition: 0.2s ease-in;
+
       &:hover {
         background-color: #f7ac21;
       }
@@ -82,6 +87,7 @@ body {
 .drop-shadow {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
   transition: 0.2s ease-in-out;
+
   &:hover {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     transform: scale(1.02);

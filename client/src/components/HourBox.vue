@@ -20,7 +20,7 @@
 import { useStore } from "vuex";
 import { computed } from "vue";
 import { useRoute } from "vue-router";
-import { ActionTypes } from "../store/actions";
+import { ActionTypes } from "@/store/actions";
 
 export default {
   props: { day: Array, idx: Number },
@@ -114,6 +114,7 @@ export default {
   background-color: white;
   border-top: none;
   border-left: none;
+
   &:nth-child(2) {
     border-top: solid 0.1px rgb(230, 230, 230) !important;
   }

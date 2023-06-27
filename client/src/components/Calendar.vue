@@ -19,7 +19,7 @@
 
 <script>
 import { ActionTypes } from "@/store/actions";
-import { getDate, getDay } from "../utils";
+import { getDate, getDay } from "@/utils";
 import HourBox from "./HourBox.vue";
 import { useRoute } from "vue-router";
 import { useStore } from "vuex";
@@ -79,6 +79,7 @@ export default {
   flex-direction: column;
   justify-content: space-between;
   margin-right: 15px;
+
   span {
     font-size: 0.8rem;
   }
@@ -88,13 +89,15 @@ export default {
 }
 
 .hour-label {
-  margin: 0px 5px;
+  margin: 0 5px;
   display: inline-block;
   width: 50px;
 }
+
 .day {
   text-align: center;
 }
+
 .daylabel {
   color: #686868;
   top: -35px;
@@ -104,19 +107,21 @@ export default {
   white-space: normal;
   width: 100%;
   margin: 10px 0;
+
   span {
     overflow-x: scroll;
     white-space: nowrap;
     font-size: 1.5rem;
   }
+
   p {
     font-size: 1rem;
     padding: 0;
-    margin: 0;
-    margin-top: 5px;
+    margin: 5px 0 0;
     text-transform: uppercase;
   }
 }
+
 .hours {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -127,6 +132,7 @@ export default {
 .fade-leave-to {
   opacity: 0;
 }
+
 .fade-enter-active,
 .fade-leave-active {
   transition: all 3s linear;

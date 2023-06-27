@@ -1,7 +1,7 @@
 import { mount } from "@vue/test-utils";
 import Event from "../views/Event.vue";
 import VueRouter from "vue-router";
-import { createStore } from 'vuex'
+import { createStore } from "vuex";
 
 //const store = createStore({
 //  state() {

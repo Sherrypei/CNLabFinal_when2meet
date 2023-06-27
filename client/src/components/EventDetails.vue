@@ -1,6 +1,6 @@
 <template>
   <transition name="fade" appear>
-    <div class="event-deets  drop-shadow">
+    <div class="event-deets drop-shadow">
       <h3>Event Details</h3>
       <table class="detail-list">
         <tr>
@@ -27,7 +27,7 @@
   width: 100%;
   border-radius: 20px;
   background-color: white;
-  
+
   h3 {
     font-size: 20px;
     font-weight: bold;
@@ -37,27 +37,33 @@
     margin-left: 10px;
   }
 }
+
 .detail-list {
   width: 100%;
   margin-left: 10px;
   margin-right: 10px;
+
   tr {
     color: rgb(99, 99, 99);
     font-size: 12px;
+
     th {
       font-weight: normal;
       text-transform: uppercase;
       text-align: left;
     }
+
     td {
       text-align: right;
     }
   }
 }
+
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
 }
+
 .fade-enter-active,
 .fade-leave-active {
   transition: all 2s ease-in;

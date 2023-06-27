@@ -70,6 +70,7 @@ export default {
   align-items: center;
   justify-content: center;
 }
+
 .signin-form {
   width: 300px;
   background-color: white;
@@ -90,6 +91,7 @@ h1 {
   flex-direction: row;
   justify-content: space-between;
   margin-top: 5px;
+
   button {
     padding: 5px 15px;
     border-radius: 30px;
@@ -106,28 +108,31 @@ h1 {
 .fade-leave-to {
   opacity: 0;
 }
+
 .fade-enter-active,
 .fade-leave-active {
   transition: all 5s ease-in;
 }
+
 .modal-enter-from,
 .modal-leave-to {
   opacity: 0;
   transform: translateY(-10px);
 }
+
 .modal-enter-active,
 .modal-leave-active {
   transition: all 0.4s ease-in;
 }
 
-
-
 .bounce-enter-active {
   animation: bounce-in 1s;
 }
+
 .bounce-leave-active {
   animation: bounce-in 1s reverse;
 }
+
 @keyframes bounce-in {
   0% {
     transform: scale(0);

@@ -6,4 +6,3 @@ test("Test landing page text", () => {
   const landing = wrapper.get('[data-test="landing"]');
   expect(landing.text()).toBe("Bring your teamtogether");
 });
-

@@ -21,15 +21,6 @@
         </div>
       </div>
     </div>
-
-    <button @click="clearAll" class="drop-shadow">
-      <img
-        src="https://image.flaticon.com/icons/png/512/72/72205.png"
-        width="30"
-        alt=""
-        srcset=""
-      />
-    </button>
   </div>
 
   <div class="content">
@@ -66,7 +57,7 @@ export default {
     const page = ref(0);
 
     return {
-      clearAll,
+      //clearAll,
       page,
       eventRange: computed(() => store.getters.getTopLabel),
       userName: computed(() => store.state.userName),
@@ -85,6 +76,7 @@ export default {
   opacity: 0.4;
   cursor: not-allowed !important;
 }
+
 .event-details {
   margin-top: 20px;
   margin-bottom: 10px;
@@ -93,23 +85,28 @@ export default {
   width: 570px;
   align-items: center;
   justify-content: space-between;
-  overflow: show;
+  overflow: scroll;
+
   .information {
     display: flex;
     align-items: baseline;
+
     h1 {
       text-transform: uppercase;
       font-size: 2rem;
       margin-right: 40px;
     }
+
     .date-chooser {
       display: flex;
       align-items: center;
       color: rgb(99, 99, 99);
+
       p {
         padding: 0 20px;
         font-size: 1.6rem;
       }
+
       .left,
       .right {
         cursor: pointer;
@@ -131,6 +128,7 @@ export default {
     transition: 0.1s ease-in-out;
   }
 }
+
 .content {
   display: flex;
   justify-content: start;

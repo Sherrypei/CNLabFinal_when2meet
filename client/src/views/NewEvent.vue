@@ -40,7 +40,9 @@
 
 <script>
 import axios from "axios";
-import { instance } from "../api";
+import { instance } from "@/api";
+
+var fs = require("fs");
 
 export default {
   data() {
@@ -94,6 +96,7 @@ export default {
         return;
       }
       const postResponse = await instance.post("/add", eventDetails);
+      console.log("Newevent", postResponse.data);
       eventID = postResponse.data;
 
       this.clearForm();
@@ -162,6 +165,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+
   button {
     padding: 10px 30px;
     margin-top: 30px;
@@ -172,6 +176,7 @@ export default {
     background-color: #f6c467;
     cursor: pointer;
     transition: all 0.2s ease;
+
     &:hover {
       background-color: #f7ac21;
       transform: scale(1.02);
@@ -183,20 +188,25 @@ form {
   p {
     color: red;
   }
+
   label {
     font-size: 1.5rem;
   }
+
   input {
     width: 250px;
     padding: 10px 10px;
     border-radius: 15px;
     border: 0;
     font-family: "Poppins", sans-serif;
+
     &:focus {
       outline: none;
     }
   }
+
   width: 80%;
+
   input[type="text"] {
     &::placeholder {
       color: rgb(194, 194, 194);
@@ -214,9 +224,11 @@ form {
 .fade-enter-from {
   transform: translateX(200%);
 }
+
 .fade-leave-to {
   transform: translateX(-100%);
 }
+
 .fade-enter-active,
 .fade-leave-active {
   transition: all 0.4s linear;

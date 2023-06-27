@@ -43,6 +43,7 @@ export default {
   background-color: white;
   width: 100%;
   padding: 10px 20px;
+
   h3 {
     font-size: 20px;
     font-weight: bold;
@@ -51,6 +52,7 @@ export default {
     margin-top: 20px;
     margin-left: 10px;
   }
+
   display: flex;
   flex-direction: column;
 
@@ -60,6 +62,7 @@ export default {
     margin-left: 10px;
     margin-bottom: 5px;
     transition: all 0.1s ease-in;
+
     p {
       display: inline;
       margin-left: 10px;
@@ -67,10 +70,12 @@ export default {
     }
   }
 }
+
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
 }
+
 .fade-enter-active,
 .fade-leave-active {
   transition: all 2s ease-in;
