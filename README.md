@@ -1,4 +1,4 @@
- when2meet clone
+
 This project is a clone of the website [when2meet](when2meet.com). We decided to do a clone of it as it is a very useful product that helps people find a common time to meet. However, it is also very aesthetically unappealing and therefore, we wanted to improve the UI.
 
 ## Installation
